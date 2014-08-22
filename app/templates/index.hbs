@@ -1,0 +1,32 @@
+<div class="home fade-in">
+  <div class="inner">
+    {{#if isSupported}}
+      {{#if isConnected}}
+        <h2>Where’s the party at?</h2>
+        <p>
+          <a class="mixedtape" href="#" {{action 'setPartyMode' 'music'}}>
+            <img src="images/mixedtape.svg" alt="Music PartyMode">
+          </a>
+          <a class="television" href="#" {{action 'setPartyMode' 'video'}}>
+            <img src="images/television.svg" alt="Music Video PartyMode">
+          </a>
+        </p>
+        <h5 class="active-host">&nbsp;{{hostname}}&nbsp;</h5>
+      {{else}}
+        <h2>Please connect to XBMC.</h2>
+        {{link-to '' 'connect' class="home-connect fi-power"}}
+      {{/if}}
+    {{else}}
+      <h2>Sorry bro, you need a better browser.</h2>
+      <a href="http://browsehappy.com">
+        <i class="bad-browser fi-skull"></i>
+      </a>
+    {{/if}}
+  </div>
+</div>
+<div class="lockup">
+  <a href="https://github.com/oddmouse/partymode-xbmc">
+    <i class="github fi-social-github"></i>
+    <img class="logo" src="images/xbmc-lockup.svg" width="72" alt="PartyMode for XBMC">
+  </a>
+</div>

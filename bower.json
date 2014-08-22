@@ -1,0 +1,17 @@
+{
+  "name": "partymode",
+  "private": true,
+  "dependencies": {
+    "ember": "~1.7",
+    "ember-data": "~1.0",
+    "jquery": "~2.1.1",
+    "handlebars": "~1.3",
+    "typeahead.js": "~0.10",
+    "fastclick": "~1.0",
+    "ember-localstorage-adapter": "~0.3",
+    "lz-string": "*"
+  },
+  "devDependencies": {
+    "ember-mocha-adapter": "~0.2"
+  }
+}

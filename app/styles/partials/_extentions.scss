@@ -1,0 +1,29 @@
+%ir {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  overflow: hidden;
+  text-indent: 102%;
+  white-space: nowrap;
+}
+
+%list-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+%flexbox {
+  @include display(flex);
+  @include align-items(center);
+  @include flex-direction(row);
+  @include justify-content(center);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  .inner {
+    max-width: 500px;
+    width: 95%;
+  }
+}

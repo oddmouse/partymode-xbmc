@@ -1,0 +1,17 @@
+// Colors
+$color-darkest: #092324;
+$color-darker: #42433f;
+$color-dark: #8e8e93;
+$color-light: #a3b6cc;
+$color-lighter: #d0d1d8;
+$color-lightest: #f5f6f8;
+$color-red: #d80055;
+$color-green: #c4d2c8;
+$color-white: #fff;
+
+// Sizes
+$size-current-image: 180px;
+
+// Media
+$mobile: new-breakpoint(max-width 640px);
+$tablet: new-breakpoint(max-width 800px);

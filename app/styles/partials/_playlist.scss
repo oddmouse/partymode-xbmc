@@ -1,0 +1,56 @@
+.playlist {
+
+  h3, h5 {
+    margin: 0;
+    padding: 1px 0;
+    line-height: 1;
+    width: 90%;
+
+    span {
+      @include ellipsis;
+      overflow: hidden;
+      background: rgba($color-darkest,0.8);
+      padding: 4px 6px;
+      margin: 0;
+    }
+  }
+
+  .current {
+    color: $color-lightest;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: $size-current-image;
+    width: 100%;
+
+    .label {
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+    }
+
+    .fanart {
+      background-color: $color-light;
+      padding: 0;
+      margin: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: $size-current-image;
+      z-index: -1;
+
+      .thumb {
+        @include transition(opacity 0.2s linear);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 30%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

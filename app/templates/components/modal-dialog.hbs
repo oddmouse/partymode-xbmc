@@ -1,0 +1,7 @@
+<div {{action 'close'}} {{bind-attr class=":modal isOpen:open:closed"}}>
+  <div class="overlay"></div>
+  <div class="content">
+    {{yield}}
+    <span class="cancel menu-item fi-x">Cancel</span>
+  </div>
+</div>

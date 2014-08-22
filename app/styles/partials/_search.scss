@@ -1,0 +1,38 @@
+.search {
+  h3 {
+    color: $color-light;
+    margin: 0;
+    padding: 0.875rem 0 0 0.875rem;
+  }
+}
+
+.twitter-typeahead {
+  display: block !important;
+  z-index: 1;
+}
+
+.tt-dropdown-menu {
+  width: 100%;
+}
+
+.tt-suggestion {
+  border-bottom: 1px solid $color-lighter;
+  cursor: pointer;
+  padding: 1em;
+  position: relative;
+  margin: 0;
+
+  &.tt-cursor {
+    background: $color-white;
+  }
+
+  // .tt-highlight {
+  //   color: $color-light;
+  //   font-weight: 400;
+  // }
+
+  p {
+    margin: 0;
+  }
+
+}

@@ -1,0 +1,159 @@
+.menu {
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  display: none;
+  z-index: 10;
+
+  &.connected {
+    display: inherit;
+  }
+
+  .ios.search-focused & {
+    visibility: hidden;
+  }
+
+  ul {
+    @extend %list-none;
+  }
+
+  &.open {
+    .overlay {
+      opacity: 0.95;
+      pointer-events: inherit;
+    }
+  }
+}
+
+.menu-toggle,
+.menu-item {
+  color: $color-lightest;
+  cursor: pointer;
+  font-size: 125%;
+  margin-top: 5px;
+}
+
+.menu-toggle,
+.menu-item:before {
+  background: $color-darkest;
+  border-radius: 50%;
+  border: none;
+  color: $color-lightest;
+  font-size: 150%;
+  height: 44px;
+  width: 44px;
+  vertical-align: middle;
+  outline: none;
+  text-align: center;
+  line-height: 44px;
+  margin-right: 0.25em;
+}
+
+.menu-toggle {
+  @include transition(transform 0.4s $ease-in-out-back, background 0.4s linear);
+  @include transform(rotate(0deg));
+  background: rgba($color-darkest, 0.8);
+  border: 1px solid $color-darker;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+
+  .menu.open & {
+    @include transform(rotate(45deg));
+    background: rgba($color-darkest, 1);
+  }
+}
+
+.ellipse {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2px -2px;
+  width: 4px;
+  height: 4px;
+
+
+  .dot {
+    @include transition(transform 0.2s $ease-out-quad);
+    background: $color-lightest;
+    display: block;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+  }
+
+  .top {
+    @include transform(translate3d(0,-10px,0) scaleY(1));
+
+    .menu.open & {
+      @include transform(translate3d(0,-6px,0) scaleY(2));
+    }
+  }
+
+  .middle {
+    @include transform(scaleX(1));
+
+    .menu.open & {
+      @include transform(scaleX(5));
+    }
+  }
+
+  .bottom {
+    @include transform(translate3d(0,10px,0) scaleY(1));
+    @include transform-origin(center bottom);
+
+    .menu.open & {
+      @include transform(translate3d(0,8px,0) scaleY(2));
+    }
+  }
+}
+
+.navigation {
+  li {
+    @include transition(transform 0.4s $ease-in-out-back, opacity 0.4s $ease-in-out-back);
+    display: block;
+    width: 180px;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+
+    .menu.open & {
+      @include transform(translateY(0));
+      opacity: 1;
+      pointer-events: inherit;
+    }
+  }
+
+  @for $i from 1 through 5 {
+    li:nth-child(#{$i}) {
+      @include transform(translateY((55px * 5) - (55px * $i)));
+      bottom: (55px * 5) - (55px * $i) + 25px;
+    }
+  }
+}
+
+.transport {
+  li  {
+    @include transition(transform 0.4s $ease-in-out-back, opacity 0.4s $ease-in-out-back);
+    display: block;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+
+    .menu.open.playing & {
+      @include transform(translateX(0));
+      opacity: 1;
+      pointer-events: inherit;
+    }
+  }
+
+  @for $i from 1 through 3 {
+    li:nth-child(#{$i}) {
+      @include transform(translateX(55px * -$i));
+      left: 55px * $i + 25px;
+    }
+  }
+}

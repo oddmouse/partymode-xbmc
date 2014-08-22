@@ -1,0 +1,39 @@
+<div class="search fade-in">
+  <form class="search-form" autocapitalize="off" autocorrect="off" autocomplete="off" {{action "search" on="submit"}}>
+    <label class="fi-magnifying-glass">
+      {{search-field value=searchInput placeholder="Search all libraries"}}
+    </label>
+  </form>
+  {{#if albumResults}}<h3>Albums</h3>{{/if}}
+  <ul class="list">
+    {{#each albumResults}}
+      <li {{action 'openModal' this}}>
+        <span class="label">{{value}}</span>
+      </li>
+    {{/each}}
+  </ul>
+  {{#if musicVideoResults}}<h3>Music Videos</h3>{{/if}}
+  <ul class="list">
+    {{#each musicVideoResults}}
+      <li {{action 'openModal' this}}>
+        <span class="label">{{value}}</span>
+      </li>
+    {{/each}}
+  </ul>
+  {{#if movieResults}}<h3>Movies</h3>{{/if}}
+  <ul class="list">
+    {{#each movieResults}}
+      <li {{action 'openModal' this}}>
+        <span class="label">{{value}}</span>
+      </li>
+    {{/each}}
+  </ul>
+  {{#if episodeResults}}<h3>Episodes</h3>{{/if}}
+  <ul class="list">
+    {{#each episodeResults}}
+      <li {{action 'openModal' this}}>
+        <span class="label">{{value}}</span>
+      </li>
+    {{/each}}
+  </ul>
+</div>

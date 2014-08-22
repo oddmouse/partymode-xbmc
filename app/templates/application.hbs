@@ -1,0 +1,10 @@
+{{outlet}}
+{{#if isSupported}}
+{{view App.NavigationView}}
+{{outlet modal}}
+{{#if isWorking}}
+<div class="loading">
+  <i class="spinner fi-loop"></i>
+</div>
+{{/if}}
+{{/if}}

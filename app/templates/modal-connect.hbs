@@ -1,0 +1,17 @@
+{{#modal-dialog action='close' isOpen=isOpen}}
+<h3>{{selected.name}} - {{selected.host}}</h3>
+<ul class="modal-menu">
+  {{#if selected.active}}
+  <li {{action 'disconnectHost'}}>
+    <span class="menu-item fi-eject">Disconnect from host</span>
+  </li>
+  {{else}}
+  <li {{action 'connectHost'}}>
+    <span class="menu-item fi-power">Connect to host</span>
+  </li>
+  {{/if}}
+  <li {{action 'removeHost'}}>
+    <span class="menu-item fi-prohibited">Remove from history</span>
+  </li>
+</ul>
+{{/modal-dialog}}

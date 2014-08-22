@@ -1,0 +1,39 @@
+  <nav {{bind-attr class=":menu view.isOpen:open:closed isPlaying:playing isConnected:connected"}}>
+  <div class="overlay"></div>
+  <ul class="navigation">
+    <li>
+    {{#if isPlaying}}
+      {{link-to 'Now Playing' 'playlist' class="menu-item fi-sound"}}
+    {{else}}
+      {{link-to 'Home' 'index' class="menu-item fi-home"}}
+    {{/if}}
+    </li>
+    <li>
+      {{link-to 'Utilities' 'utilities' class="menu-item fi-wrench"}}
+    </li>
+    <li>
+      {{link-to 'Connect' 'connect' class="menu-item fi-power"}}
+    </li>
+    <li>
+      {{link-to 'Search' 'search' class="menu-item fi-magnifying-glass"}}
+    </li>
+  </ul>
+  <ul class="transport">
+    <li>
+      <span class="menu-item fi-next" {{action 'playerNext'}}></span>
+    </li>
+    <li>
+      <span class="menu-item fi-pause" {{action 'playerPause'}}></span>
+    </li>
+    <li>
+      <span class="menu-item fi-stop" {{action 'playerStop'}}></span>
+    </li>
+  </ul>
+  <button class="menu-toggle">
+    <span class="ellipse">
+      <i class="dot top"></i>
+      <i class="dot middle"></i>
+      <i class="dot bottom"></i>
+    </span>
+  </button>
+</nav>

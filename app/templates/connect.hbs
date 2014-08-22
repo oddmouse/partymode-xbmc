@@ -1,0 +1,20 @@
+<div class="connect fade-in">
+  <form class="connect-form" autocapitalize="off" autocorrect="off" autocomplete="off" {{action "addHost" on="submit"}}>
+    <label class="fi-power">
+      {{input value=hostInput placeholder="XBMC IP address or hostname"}}
+    </label>
+  </form>
+  <ul class="list">
+    {{#each controller}}
+      <li {{action 'openModal' this}} {{bind-attr class="active:active"}}>
+        <h3>{{name}}</h3>
+        <span class="subhead">{{host}}</span>
+      </li>
+    {{else}}
+      <li class="empty-list">
+        <h2 class="label">No saved hosts</h2>
+        <i class="icon fi-power"></i>
+      </li>
+    {{/each}}
+  </ul>
+</div>

@@ -1,0 +1,98 @@
+.list {
+  @extend %list-none;
+  background: $color-lightest;
+  margin-top: 0;
+
+  &:last-child {
+    padding-bottom: $size-current-image;
+  }
+
+  &.numbered {
+    counter-reset: li;
+  }
+
+  &.numbered li {
+    &:before {
+      content: counter(li);
+      counter-increment: li;
+      color: $color-light;
+      position: absolute;
+      text-align: right;
+
+      width: 1.5em;
+    }
+
+    .label {
+      display: block;
+      padding-left: 2.5em;
+    }
+  }
+
+  li {
+    border-bottom: 1px solid $color-lighter;
+    cursor: pointer;
+    position: relative;
+
+    @include transition(background 0.2s linear);
+    display: block;
+    color: $color-darkest;
+    padding: 1em;
+
+    &.active {
+      background: $color-white;
+
+      &:after {
+        color: $color-light;
+        content: "\f126";
+        font-family: 'foundation-icons';
+        font-size: 200%;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+      }
+    }
+
+    &.empty-list {
+      border: 0;
+      color: $color-lighter;
+      text-align: center;
+      padding-top: 4em;
+      pointer-events: none;
+
+      &:before {
+        display: none;
+      }
+
+      .label {
+        margin: 0;
+        padding: 0;
+      }
+
+      .icon {
+        font-size: 800%;
+        line-height: 0;
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 0;
+
+    + .subhead {
+      color: $color-light;
+    }
+  }
+}
+
+.list-icon {
+  background: $color-light;
+  border-radius: 50%;
+  color: $color-lightest;
+  display: inline-block;
+  line-height: 24px;
+  margin-right: 0.25em;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
