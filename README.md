@@ -3,7 +3,7 @@
 <img align="right" src="https://chart.googleapis.com/chart?cht=qr&chld=L|2&chs=120x120&chl=http://partymode.tv" />
 
 <!-- A party mode centric remote control for XBMC. -->
-An XBMC remote control web app centered around one of my favorite underrated features, party mode.  
+A party mode based remote control for XBMC.  
 [http://partymode.tv](http://partymode.tv)
 
 
