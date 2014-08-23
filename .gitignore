@@ -1,4 +1,5 @@
 .DS_Store
+.grunt
 .sass-cache
 .tmp
 app/bower_components

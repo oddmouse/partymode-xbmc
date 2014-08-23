@@ -11,7 +11,10 @@
     color: $color-light;
   }
 
-  a {
+  .mixedtape,
+  .television {
+    display: inline-block;
+    cursor: pointer;
     width: 49%;
     padding: 0 2%;
   }

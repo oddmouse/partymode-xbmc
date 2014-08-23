@@ -1,30 +1,44 @@
 #PartyMode for XBMC
 
-A party mode centered remote control for XBMC.  
+<img align="right" src="https://chart.googleapis.com/chart?cht=qr&chld=L|2&chs=120x120&chl=http://partymode.tv" />
 
-[partymode.tv](http://partymode.tv)
+<!-- A party mode centric remote control for XBMC. -->
+An XBMC remote control web app centered around one of my favorite underrated features, party mode.  
+[http://partymode.tv](http://partymode.tv)
 
+
+###Features
+- One-button music or music video party mode.
+- A mobile friendly, responsive design.
+- Switch between multiple XMBC installations.
+- Autocomplete library searching.
+- Artwork downloaded from last.fm and TMDb.
+- Runs on any web browser that suports WebSockets.
+
+
+##Screenshots
+
+<img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-home.jpg" />
+<img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-playlist.jpg" />
+<img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-menu.jpg" />
 
 
 ##Usage
 
-####1. Enable XBMC to allow external remotes
+###1. Enable XBMC to allow external remotes
 
 In XBMC, go to System › Settings › Services › Remote control and activate *Allow programs on other systems to control XBMC*.
 
-
-####2. Find the XBMC host IP address
+###2. Find the XBMC host IP address
 
 In XBMC, go to System › System info and find *IP address*.
 
 
-####3. Connect
+###3. Connect
 
-Visit [partymode.tv](http://partymode.tv), select connect from the menu and enter the XBMC host IP address.
+Visit [http://partymode.tv](http://partymode.tv), select connect from the menu and enter the XBMC host IP address.
 
-Another option is to visit **partymode.tv?ip=your.ip.address**.
-
-
+**Bonus:** You can also append the url like **partymode.tv?ip=xbmc.ip.address** to connect.
 
 ##Thank you
 
@@ -39,6 +53,7 @@ Another option is to visit **partymode.tv?ip=your.ip.address**.
 [Handlebars](http://handlebarsjs.com)  
 [jQuery](http://jquery.com)  
 [last.fm](http://last.fm)  
+[OpenELEC](http://openelec.tv)  
 [Sass](http://sass-lang.com)  
 [TMDb](https://www.themoviedb.org)  
 [Typeahead.js](https://twitter.github.io/typeahead.js)  

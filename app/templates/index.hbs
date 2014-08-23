@@ -4,12 +4,12 @@
       {{#if isConnected}}
         <h2>Where’s the party at?</h2>
         <p>
-          <a class="mixedtape" href="#" {{action 'setPartyMode' 'music'}}>
+          <div class="mixedtape" {{action 'setPartyMode' 'music'}}>
             <img src="images/mixedtape.svg" alt="Music PartyMode">
-          </a>
-          <a class="television" href="#" {{action 'setPartyMode' 'video'}}>
+          </div>
+          <div class="television" {{action 'setPartyMode' 'video'}}>
             <img src="images/television.svg" alt="Music Video PartyMode">
-          </a>
+          </div>
         </p>
         <h5 class="active-host">&nbsp;{{hostname}}&nbsp;</h5>
       {{else}}

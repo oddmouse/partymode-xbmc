@@ -288,7 +288,7 @@ App.XBMCSocket = Ember.Object.extend(Ember.Evented, {
 
     this.trigger(event, data);
 
-    Ember.Logger.log('WS Message:', data);
+    // Ember.Logger.log('WS Message:', data);
 
   },
 
