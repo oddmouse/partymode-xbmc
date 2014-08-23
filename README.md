@@ -6,14 +6,16 @@
 A party mode based remote control for XBMC.  
 [http://partymode.tv](http://partymode.tv)
 
+[![Chrome Web Store](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_206x58.png)](https://chrome.google.com/webstore/detail/partymode-for-xbmc/anoflhlfcihainionbfhdolicpcphcic)
+
 
 ###Features
 - One-button music or music video party mode.
 - A mobile friendly, responsive design.
 - Switch between multiple XMBC installations.
 - Autocomplete library searching.
-- Artwork downloaded from last.fm and TMDb.
-- Runs on any web browser that suports WebSockets.
+- Artwork provided by last.fm and TMDb.
+- Runs on any web browser that supports WebSockets.
 
 
 ##Screenshots

@@ -1,0 +1,20 @@
+{
+  "name": "PartyMode for XBMC",
+  "description": "A party mode based remote control for XBMC.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "permissions": [
+    "webview"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "128": "icon128.png"
+  }
+}
