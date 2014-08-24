@@ -1,6 +1,6 @@
 App.ModalController = Ember.Controller.extend({
 
-  needs: ['connect', 'playlist', 'search'],
+  needs: ['connect', 'playlist', 'utilities', 'search'],
 
   selected: null,
   isOpen: false,
@@ -18,6 +18,14 @@ App.ModalController = Ember.Controller.extend({
     return this.get('controllers.playlist.isPlaying') &&
       this.get('controllers.playlist.playlistid') !== null &&
       this.get('controllers.playlist.nowplaying.type') === this.get('selected.type');
+  }.property('selected'),
+
+  confirmReboot: function() {
+    return this.get('selected') === 'systemReboot';
+  }.property('selected'),
+
+  confirmClearSearch: function() {
+    return this.get('selected') === 'clearSearch';
   }.property('selected'),
 
   initListeners: function() {
@@ -41,6 +49,19 @@ App.ModalController = Ember.Controller.extend({
     open: function(item) {
       this.set('isOpen', true);
       this.set('selected', item);
+    },
+
+    // Utilities actions
+    systemReboot: function() {
+      this.send('close');
+      this.get('controllers.utilities')
+        .send('systemReboot');
+    },
+
+    clearSearch: function() {
+      this.send('close');
+      this.get('controllers.utilities')
+        .send('clearSearch');
     },
 
     // Playlist actions

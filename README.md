@@ -9,6 +9,7 @@ An XBMC, party mode centered, remote control built with Ember.js.
 
 
 ###Features
+
 - One-button music or music video party mode.
 - A mobile friendly, responsive design.
 - Switch between multiple XMBC installations.

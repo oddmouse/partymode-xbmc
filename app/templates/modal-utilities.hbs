@@ -1,0 +1,18 @@
+{{#modal-dialog action='close' isOpen=isOpen}}
+{{#if confirmReboot}}
+<h3>Reboot system</h3>
+<ul class="modal-menu">
+  <li {{action 'systemReboot'}}>
+    <span class="menu-item fi-refresh">Confirm reboot</span>
+  </li>
+</ul>
+{{/if}}
+{{#if confirmClearSearch}}
+<h3>Clear search cache</h3>
+<ul class="modal-menu">
+  <li {{action 'clearSearch'}}>
+    <span class="menu-item fi-refresh">Confirm clear</span>
+  </li>
+</ul>
+{{/if}}
+{{/modal-dialog}}

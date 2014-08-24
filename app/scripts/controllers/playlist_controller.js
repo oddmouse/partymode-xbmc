@@ -115,7 +115,7 @@ App.PlaylistController = Ember.ArrayController.extend({
 			case 'song':
 
 				// last.fm
-				Ember.$.getJSON('//ws.audioscrobbler.com/2.0/', {
+				Ember.$.getJSON('http://ws.audioscrobbler.com/2.0/', {
 
 					api_key: '70c9409ed6b544eaabc34f5dd80a6eab',
 					method: 'artist.getinfo',
@@ -136,7 +136,7 @@ App.PlaylistController = Ember.ArrayController.extend({
 			case 'movie':
 
 				// themoviedb.org
-				Ember.$.getJSON('//api.themoviedb.org/3/search/multi', {
+				Ember.$.getJSON('http://api.themoviedb.org/3/search/multi', {
 
 					api_key: 'da34baf0d96a38f18bbefd7a8e8cbf82',
 					query: this.get('nowplaying.title') || this.get('nowplaying.label')
@@ -144,7 +144,7 @@ App.PlaylistController = Ember.ArrayController.extend({
 				}).then(function(data) {
 
 					if (typeof data.results !== 'undefined') {
-						this.setFanArt('//image.tmdb.org/t/p/w780' + data.results.get('firstObject').backdrop_path);
+						this.setFanArt('http://image.tmdb.org/t/p/w780' + data.results.get('firstObject').backdrop_path);
 					}
 
 				}.bind(this));
