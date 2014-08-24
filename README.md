@@ -2,8 +2,7 @@
 
 <img align="right" src="https://chart.googleapis.com/chart?cht=qr&chld=L|2&chs=120x120&chl=http://partymode.tv" />
 
-<!-- A party mode centric remote control for XBMC. -->
-A party mode based remote control for XBMC.  
+An XBMC, party mode centered, remote control built with Ember.js.  
 [http://partymode.tv](http://partymode.tv)
 
 [![Chrome Web Store](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_206x58.png)](https://chrome.google.com/webstore/detail/partymode-for-xbmc/anoflhlfcihainionbfhdolicpcphcic)
