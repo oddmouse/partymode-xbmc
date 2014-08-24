@@ -38,6 +38,11 @@
     color: $color-darkest;
     padding: 1em;
 
+    &.hover {
+      @include transition(0);
+      background: $color-white;
+    }
+
     &.active {
       background: $color-white;
 

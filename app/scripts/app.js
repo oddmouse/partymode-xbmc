@@ -7,6 +7,16 @@ var App = window.App = Ember.Application.create({
     // Init FastClick plugin
     FastClick.attach(document.body);
 
+    // Global hover/touch state for list items
+    Ember.$(document).on('touchstart mousedown', '.list li', function() {
+      Ember.$(this).addClass('hover');
+    });
+
+    // Release hover/touch state for list items
+    Ember.$('body').on('touchend mouseup', function() {
+      Ember.$('.list li').removeClass('hover');
+    });
+
   }
 
 });

@@ -1,6 +1,7 @@
 html,
 body,
 .wrapper {
+  cursor: default;
   height: 100%;
 }
 
@@ -45,6 +46,8 @@ img {
 }
 
 .lockup {
+  color: $color-light;
+  cursor: pointer;
   padding-bottom: 4px;
   position: fixed;
   bottom: 10%;
