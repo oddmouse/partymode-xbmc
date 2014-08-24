@@ -37,12 +37,12 @@ App.ApplicationController = Ember.Controller.extend({
     // Socket.Open
     this.socket.on('Socket.Open', function() {
 
+      this.set('isConnected', true);
       this.set('sleepTimeout', new Date().getTime());
-      this.sleepTest();
 
       this.socket.playerGetActivePlayers();
 
-      this.set('isConnected', true);
+      Ember.run.later(this, 'sleepTest');
 
     }.bind(this));
 
@@ -251,15 +251,15 @@ App.ApplicationController = Ember.Controller.extend({
   sleepTest: function() {
 
     var now = new Date().getTime();
-    var then = this.get('sleepTimeout') + 4000;
+    var then = this.get('sleepTimeout') + 3000;
 
-    if (now > then) {
+    if (now > then && this.socket.get('state') !== 1) {
       Ember.run.later(this, 'reconnect');
     }
 
     this.set('sleepTimeout', now);
 
-    Ember.run.later(this, 'sleepTest', 2000);
+    Ember.run.later(this, 'sleepTest', 1000);
 
   },
 

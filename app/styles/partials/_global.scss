@@ -17,7 +17,7 @@ body {
   -webkit-user-drag: none;
 
   &:after{
-    @include background(image-url('mixedtape.svg') image-url('television.svg') image-url('xbmc-lockup.svg'));
+    content: image-url('mixedtape.svg') image-url('television.svg') image-url('xbmc-lockup.svg');
     display: none;
   }
 }

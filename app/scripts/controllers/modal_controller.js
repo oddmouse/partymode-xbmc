@@ -6,7 +6,7 @@ App.ModalController = Ember.Controller.extend({
   isOpen: false,
 
   hasAlbum: function() {
-    return this.get('selected.album') !== ''&&
+    return this.get('selected.album') &&
       this.get('selected.type') !== 'album';
   }.property('selected'),
 
