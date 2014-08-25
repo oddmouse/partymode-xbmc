@@ -22,7 +22,7 @@ An XBMC, party mode centered, remote control built with Ember.js.
 
 <img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-home.jpg" />
 <img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-playlist.jpg" />
-<img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-menu.jpg" />
+<img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-modal.jpg" />
 
 
 ##Usage
