@@ -15,8 +15,9 @@ App.ApplicationController = Ember.Controller.extend({
 
     var localStorageSupport = 'localStorage' in window && window.localStorage !== null;
     var WebSocketSupport = 'WebSocket' in window && window.WebSocket !== null;
+    var pointerEventsSupport = 'pointerEvents' in document.body.style;
 
-    return localStorageSupport && WebSocketSupport;
+    return localStorageSupport && WebSocketSupport && pointerEventsSupport;
 
   }.property(),
 
