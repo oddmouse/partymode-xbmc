@@ -17,7 +17,7 @@
   "webview": {
     "partitions": [
       {
-        "name": "static",
+        "name": "partymode",
         "accessible_resources": [
           "*.css",
           "*.eot",
