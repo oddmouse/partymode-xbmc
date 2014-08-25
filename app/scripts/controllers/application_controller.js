@@ -38,6 +38,8 @@ App.ApplicationController = Ember.Controller.extend({
     // Socket.Open
     this.socket.on('Socket.Open', function() {
 
+      this.resetProperties();
+
       this.set('isConnected', true);
       this.set('sleepTimeout', new Date().getTime());
 
@@ -249,6 +251,21 @@ App.ApplicationController = Ember.Controller.extend({
 
   },
 
+  resetProperties: function() {
+
+    this.set('isConnected', false)
+      .set('isPlaying', false)
+      .set('isWorking', false)
+      .set('partymode', false)
+      .set('playerid', null)
+      .set('playlistid', null)
+      .set('host', null)
+      .set('hostname', null)
+      .set('sleepTimeout', 0);
+
+  },
+
+  // Test if device has awaken
   sleepTest: function() {
 
     var now = new Date().getTime();

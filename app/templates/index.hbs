@@ -5,10 +5,10 @@
         <h2>Where’s the party at?</h2>
         <p>
           <div class="mixedtape" {{action 'setPartyMode' 'music'}}>
-            <img src="images/mixedtape.svg" alt="Music PartyMode">
+            <img width="512" src="images/mixedtape.svg" alt="Music PartyMode">
           </div>
           <div class="television" {{action 'setPartyMode' 'video'}}>
-            <img src="images/television.svg" alt="Music Video PartyMode">
+            <img width="512" src="images/television.svg" alt="Music Video PartyMode">
           </div>
         </p>
         <h5 class="active-host">&nbsp;{{hostname}}&nbsp;</h5>
@@ -17,16 +17,18 @@
         {{link-to '' 'connect' class="home-connect fi-power"}}
       {{/if}}
     {{else}}
-      <h2>Sorry bro, you need a better browser.</h2>
-      <a href="http://browsehappy.com">
-        <i class="bad-browser fi-skull"></i>
-      </a>
+      <div class="unsupported">
+        <h2>Sorry bro, you need a better browser.</h2>
+        <a href="http://browsehappy.com">
+          <i class="bad-browser fi-skull"></i>
+        </a>
+      </div>
     {{/if}}
   </div>
 </div>
 <div class="lockup">
   <a href="https://github.com/oddmouse/partymode-xbmc" target="_blank">
     <i class="github fi-social-github"></i>
-    <img class="logo" src="images/xbmc-lockup.svg" width="72" alt="PartyMode for XBMC">
+    <img class="logo" width="72" src="images/xbmc-lockup.svg" alt="PartyMode for XBMC">
   </a>
 </div>

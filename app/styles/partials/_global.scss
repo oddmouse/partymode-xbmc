@@ -66,11 +66,12 @@ img {
 }
 
 .overlay {
-  @include transition(opacity 0.2s linear);
+  @include transition(opacity 0.2s linear, visibility 0.2s linear);
   @include transition-delay(0.2s);
   background: $color-light;
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;

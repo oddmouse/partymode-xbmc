@@ -11,11 +11,11 @@ An XBMC, party mode centered, remote control built with Ember.js.
 ###Features
 
 - One-button music or music video party mode.
-- A mobile friendly, responsive design.
-- Switch between multiple XMBC installations.
+- Switch between multiple XMBC hosts.
 - Autocomplete library searching.
 - Artwork provided by last.fm and TMDb.
-- Runs on any web browser that supports WebSockets.
+- Mobile friendly design with support for all modern browsers.
+- Compatible with XBMC versions 12.0 “Frodo” and above.
 
 
 ##Screenshots
@@ -27,20 +27,19 @@ An XBMC, party mode centered, remote control built with Ember.js.
 
 ##Usage
 
-###1. Enable XBMC to allow external remotes
+###1. Install XBMC
+
+You must have a running XBMC installation on the same local network to use this remote. Visit http://xbmc.org or http://openelec.tv and follow their guides to install the latest release.
+
+###2. Enable external remotes
 
 In XBMC, go to System › Settings › Services › Remote control and activate *Allow programs on other systems to control XBMC*.
 
-###2. Find the XBMC host IP address
-
-In XBMC, go to System › System info and find *IP address*.
-
-
 ###3. Connect
 
-Visit [http://partymode.tv](http://partymode.tv), select connect from the menu and enter the XBMC host IP address.
+In XBMC, go to System › System info and look for *IP address*. Then visit [http://partymode.tv](http://partymode.tv), select connect from the menu and enter the XBMC host IP address.
 
-**Bonus:** You can also append the url like **partymode.tv?ip=xbmc.ip.address** to connect.
+**Bonus:** You can also append the url like **partymode.tv?ip=host.ip.address** to connect. Great for sharing in a text message.
 
 ##Thank you
 

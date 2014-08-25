@@ -1,6 +1,7 @@
 .modal {
   position: fixed;
   pointer-events: none;
+  visibility: hidden;
   top: 0;
   right: 0;
   bottom: 0;
@@ -9,9 +10,11 @@
 
   &.open {
     pointer-events: inherit;
+    visibility: visible;
 
     .overlay {
       opacity: 0.95;
+      visibility: visible;
     }
 
     .content {
