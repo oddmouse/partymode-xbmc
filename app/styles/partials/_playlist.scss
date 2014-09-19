@@ -37,7 +37,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: $size-current-image;
+      height: 100%;
       z-index: -1;
 
       .thumb {
@@ -45,11 +45,14 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 30%;
+        height: $size-current-image;
+        width: 100%;
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+
+        &.reflect {
+          top: $size-current-image;
+          transform: scaleY(-1);
+        }
       }
     }
   }

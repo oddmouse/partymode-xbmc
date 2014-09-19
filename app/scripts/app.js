@@ -13,7 +13,7 @@ var App = window.App = Ember.Application.create({
     });
 
     // Release hover/touch state for list items
-    Ember.$('body').on('touchend mouseup', function() {
+    Ember.$('body').on('touchend touchmove mouseup', function() {
       Ember.$('.list li').removeClass('hover');
     });
 
