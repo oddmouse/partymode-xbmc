@@ -39,11 +39,12 @@ App.ApplicationController = Ember.Controller.extend({
     this.socket.on('Socket.Open', function() {
 
       this.set('isConnected', true);
-      this.set('sleepTimeout', new Date().getTime());
 
       this.socket.playerGetActivePlayers();
 
-      Ember.run.later(this, 'sleepTest');
+      // window.addEventListener('pageshow', function() {
+      //   Ember.run.later(this, 'reconnect');
+      // }.bind(this), false);
 
     }.bind(this));
 
@@ -226,7 +227,7 @@ App.ApplicationController = Ember.Controller.extend({
 
   // Connect to last active host
   reconnect: function() {
-
+    
     // Connect to ip query param or last active host
     if (this.socket.get('state') !== 1) {
 
@@ -252,22 +253,6 @@ App.ApplicationController = Ember.Controller.extend({
       }
 
     }
-
-  },
-
-  // Test if device has awaken
-  sleepTest: function() {
-
-    var now = new Date().getTime();
-    var then = this.get('sleepTimeout') + 3000;
-
-    if (now > then && this.socket.get('state') !== 1) {
-      Ember.run.later(this, 'reconnect');
-    }
-
-    this.set('sleepTimeout', now);
-
-    Ember.run.later(this, 'sleepTest', 1000);
 
   },
 

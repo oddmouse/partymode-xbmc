@@ -242,7 +242,7 @@ module.exports = function (grunt) {
 								fastclick: 'bower_components/fastclick/lib/fastclick.js',
 								handlebars: 'bower_components/handlebars/handlebars.runtime.js',
 								jquery: 'bower_components/jquery/dist/jquery.js',
-								lz_string: 'bower_components/lz-string/libs/reference/lz-string-1.3.3.js',
+								lz_string: 'bower_components/lz-string/libs/lz-string.js',
 								typeahead: 'bower_components/typeahead.js/dist/bloodhound.js',
 							}
 						},
@@ -259,7 +259,7 @@ module.exports = function (grunt) {
 								fastclick: 'bower_components/fastclick/lib/fastclick.js',
 								handlebars: 'bower_components/handlebars/handlebars.runtime.js',
 								jquery: 'bower_components/jquery/dist/jquery.js',
-								lz_string: 'bower_components/lz-string/libs/reference/lz-string-1.3.3.js',
+								lz_string: 'bower_components/lz-string/libs/lz-string.js',
 								typeahead: 'bower_components/typeahead.js/dist/bloodhound.js',
 							}
 						},
