@@ -1,4 +1,4 @@
-#PartyMode for XBMC
+# PartyMode for XBMC
 
 <img align="right" src="https://chart.googleapis.com/chart?cht=qr&chld=L|2&chs=120x120&chl=http://partymode.tv" />
 
@@ -8,7 +8,7 @@ An XBMC, party mode centered, remote control built with Ember.js.
 [![Chrome Web Store](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_206x58.png)](https://chrome.google.com/webstore/detail/partymode-for-xbmc/anoflhlfcihainionbfhdolicpcphcic)
 
 
-###Features
+### Features
 
 - One-button music or music video party mode.
 - Switch between multiple XMBC hosts.
@@ -18,30 +18,30 @@ An XBMC, party mode centered, remote control built with Ember.js.
 - Compatible with XBMC versions 12.0 “Frodo” and above.
 
 
-##Screenshots
+## Screenshots
 
 <img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-home.jpg" />
 <img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-playlist.jpg" />
 <img width="31%" hspace="3" style="max-width:320px;" src="http://partymode.tv/images/screen-modal.jpg" />
 
 
-##Usage
+## Usage
 
-###1. Install XBMC
+### 1. Install XBMC
 
 You must have a running XBMC installation on the same local network to use this remote. Visit http://xbmc.org or http://openelec.tv and follow their guides to install the latest release.
 
-###2. Enable external remotes
+### 2. Enable external remotes
 
 In XBMC, go to System › Settings › Services › Remote control and activate *Allow programs on other systems to control XBMC*.
 
-###3. Connect
+### 3. Connect
 
 In XBMC, go to System › System info and look for *IP address*. Then visit [http://partymode.tv](http://partymode.tv), select connect from the menu and enter the XBMC host IP address.
 
 **Bonus:** You can also append the url like **partymode.tv?ip=host.ip.address** to connect. Great for sharing in a text message.
 
-##Thank you
+## Thank you
 
 [Bourbon](http://bourbon.io)  
 [Bower](http://bower.io)  
