@@ -1,9 +1,9 @@
 # PartyMode for XBMC
 
-<img align="right" src="https://chart.googleapis.com/chart?cht=qr&chld=L|2&chs=120x120&chl=http://partymode.tv" />
+<img align="right" src="https://chart.googleapis.com/chart?cht=qr&chld=L|2&chs=120x120&chl=https://oddmouse.github.io/partymode-xbmc/" />
 
 An XBMC, party mode centered, remote control built with Ember.js.  
-[http://partymode.tv](http://partymode.tv)
+[https://oddmouse.github.io/partymode-xbmc/](https://oddmouse.github.io/partymode-xbmc/)
 
 [![Chrome Web Store](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_206x58.png)](https://chrome.google.com/webstore/detail/partymode-for-xbmc/anoflhlfcihainionbfhdolicpcphcic)
 
@@ -37,9 +37,9 @@ In XBMC, go to System › Settings › Services › Remote control and activate 
 
 ### 3. Connect
 
-In XBMC, go to System › System info and look for *IP address*. Then visit [http://partymode.tv](http://partymode.tv), select connect from the menu and enter the XBMC host IP address.
+In XBMC, go to System › System info and look for *IP address*. Then visit [partymode-xbmc](https://oddmouse.github.io/partymode-xbmc/), select connect from the menu and enter the XBMC host IP address.
 
-**Bonus:** You can also append the url like **partymode.tv?ip=host.ip.address** to connect. Great for sharing in a text message.
+**Bonus:** You can also append the url like **https://oddmouse.github.io/partymode-xbmc/?ip=host.ip.address** to connect. Great for sharing in a text message.
 
 ## Thank you
 
