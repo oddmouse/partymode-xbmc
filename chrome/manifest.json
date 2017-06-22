@@ -2,7 +2,7 @@
   "name": "PartyMode for XBMC",
   "short_name": "PartyMode",
   "description": "An XBMC, party mode centered, remote control built with Ember.js.",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "manifest_version": 2,
   "app": {
     "background": {

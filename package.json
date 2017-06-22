@@ -2,7 +2,7 @@
   "name": "partymode",
   "version": "1.1.1",
   "description": "An XBMC, party mode centered, remote control built with Ember.js.",
-  "homepage": "http://partymode.tv",
+  "homepage": "http://oddmouse.github.io/partymode-xbmc",
   "private": true,
   "author": {
     "name": "Lindy Roquemore",

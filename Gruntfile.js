@@ -281,7 +281,7 @@ module.exports = function (grunt) {
 														'*.{ico,txt,png}',
 														'.htaccess',
 														'CNAME',
-														'images/{,*/}*.{webp,gif}',
+														'images/{,*/}*.{webp,gif,jpg}',
 														'styles/fonts/*'
 												]
 										},
@@ -305,7 +305,7 @@ module.exports = function (grunt) {
 						dist: [
 								'emberTemplates',
 								'sass:dist',
-								'imagemin',
+								// 'imagemin',
 								'svgmin',
 								'htmlmin'
 						]
